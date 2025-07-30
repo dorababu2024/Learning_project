@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header with Navigation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+      border-bottom: 2px solid #ccc;
+    }
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #2e1a5a; /* Dark purple text */
+      margin-left: 20px;
+    }
+    .search-bar-container {
+      position: relative;
+      flex-grow: 1;
+      margin: 0 20px;
+    }
+    .search-bar {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    .search-icon {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+    }
+    .icons img {
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+    }
+    .navbar {
+      background-color: #2e1a5a; /* Dark purple background */
+      padding: 10px 0;
+      text-align: center;
+    }
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .navbar a:hover {
+      background-color: #3a276f;
+      border-radius: 4px;
+    }
+    .navbar a:after {
+      content: ' ▼';
+      font-size: 10px;
+      display: inline-block;
+    }
+    .navbar a.no-dropdown:after {
+      content: ''; /* For items without dropdown */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="header">
+    <div class="logo">KISNA</div>
+    <div class="search-bar-container">
+      <input type="text" class="search-bar" placeholder="Search...">
+      <span class="search-icon">🔍</span>
+    </div>
+    <div class="icons">
+      <img src="https://img.icons8.com/ios/50/null/user--v1.png" alt="User Icon">
+      <img src="https://img.icons8.com/ios/50/null/shopping-cart--v1.png" alt="Cart Icon">
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#">RINGS</a>
+    <a href="#">EARRINGS</a>
+    <a href="#">PENDANTS</a>
+    <a href="#">ALL JEWELLERY</a>
+    <a href="#">COLLECTIONS</a>
+    <a href="#">GIFTS</a>
+    <a href="#">GOLD COINS</a>
+    <a href="#">CHAINS</a>
+    <a href="#">READY TO SHIP</a>
+    <a href="#" class="no-dropdown">10+1 MONTHLY PLAN</a>
+    <a href="#" class="no-dropdown">LOCATE OUR STORE</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <style>
+        .responsive-image {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Image for screens above 700px */
+        .img-above-700 {
+            display: block;
+        }
+
+        .img-below-700 {
+            display: none;
+        }
+
+        /* Media query for screens below 700px */
+        @media (max-width: 700px) {
+            .img-above-700 {
+                display: none;
+            }
+            .img-below-700 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image Example</h1>
+    <!-- Image for screens above 700px -->
+    <img src="images/pexels-julia-m-cameron-4144222.jpg" alt="Image for wide screens" class="responsive-image img-above-700">
+
+    <!-- Image for screens below 700px -->
+    <img src="images/pexels-tima-miroshnichenko-5428003.jpg" alt="Image for narrow screens" class="responsive-image img-below-700">
+</body>
+</html>

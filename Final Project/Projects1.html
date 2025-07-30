@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decibel Jewellers</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        /* Add some basic styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .navbar-right {
+            display: flex;
+            align-items: center;
+            margin-left:30%;
+        }
+
+        .navbar-right a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar-right a:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+
+        .search-bar {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+  
+    .search-icon {
+      position: relative;
+      left: -35px;
+      cursor: pointer;
+    }
+
+    .navbar1 {
+      background-color:burlywood; /* Dark purple background */
+      padding: 10px 0;
+      text-align: center;
+    }
+    .navbar1 a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .navbar1 a:hover {
+      background-color: #3a276f; /* Slightly lighter purple on hover */
+      border-radius: 4px;
+    }
+    .navbar1 a:after {
+      content: ' ▼';
+      font-size: 10px;
+      display: inline-block;
+    }
+    .navbar1 a.no-dropdown:after {
+      content: ''; /* For items without dropdown */
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2%;
+      margin-top: 10px;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 0 10px 0;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .dropdown{
+        position:relative;
+        display: inline-block;
+    }
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 0;
+        min-width: 160px;
+    }
+
+    .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
+        .search-bar{
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px; /* Change this value to adjust the roundness */
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/Decibel Jewellery.jpeg" alt="Decibel Jewellers Logo">
+        </div>
+        <div class="navbar-right">
+            <a href="#"><span class="icon"></span><input type="text" placeholder="search" class="search-bar"></a>
+            <a href="#"><span class="icon">🛒</span> My Cart</a>
+            <div class = "dropdown">
+            <a href="#"><span class="icon">👤</span> Account Login</a>
+            <div class = "dropdown-content">
+                <a href="signup.html">Sign Up</a>
+                <a href="Signin.htm">Sign In</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+            <div class="navbar1">
+                <a href="#">RINGS</a>
+                <a href="#">EARRINGS</a>
+                <a href="#">PENDANTS</a>
+              </div>
+              
+              <div class="container">
+                <div class="card">
+                  <img src="images/ring.png" alt="Classic Fern Gold Ring">
+                  <div class="card-body">
+                    <h3 class="card-title">Classic Fern Gold Ring</h3>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn">Add to Cart</a>
+                  </div>
+                </div>
+            
+                <div class="card">
+                  <img src="images/ring.png" alt="Classic Fern Gold Ring">
+                  <div class="card-body">
+                    <h3 class="card-title">Classic Fern Gold Ring</h3>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn">Add to Cart</a>
+                  </div>
+                </div>
+            
+                <div class="card">
+                  <img src="images/ring.png" alt="Classic Fern Gold Ring">
+                  <div class="card-body">
+                    <h3 class="card-title">Classic Fern Gold Ring</h3>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn">Add to Cart</a>
+                  </div>
+                </div>
+            
+                <div class="card">
+                  <img src="images/ring.png" alt="Classic Fern Gold Ring">
+                  <div class="card-body">
+                    <h3 class="card-title">Classic Fern Gold Ring</h3>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn">Add to Cart</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/ring.png" alt="Classic Fern Gold Ring">
+                    <div class="card-body">
+                      <h3 class="card-title">Classic Fern Gold Ring</h3>
+                      <p class="card-text"></p>
+                      <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="images/ring.png" alt="Classic Fern Gold Ring">
+                    <div class="card-body">
+                      <h3 class="card-title">Classic Fern Gold Ring</h3>
+                      <p class="card-text"></p>
+                      <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                  </div>
+
+              </div>     
+
+
+</body>
+</div>
+<script src="asset/js/bootstrap.min.js"></script>
+</div>
+</html>

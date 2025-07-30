@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Heading with Logo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.custom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff8000; /* Orange background color */
+  padding: 15px 30px;
+  color: white;
+  height: 100px;
+}
+
+.custom-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.custom-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.custom-heading-wrapper {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.custom-main-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .custom-header {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 10px;
+  }
+
+  .custom-logo {
+      width: 60px;
+      height: 60px;
+  }
+
+  .custom-main-title {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-main-title {
+      font-size: 1.2rem;
+  }
+
+  .custom-logo {
+      width: 50px;
+      height: 50px;
+  }
+}
+</style>
+<body>
+
+    <header class="custom-header"></header>
+        <div class="custom-logo-wrapper">
+            <img src="images/student-education-logo-vector-14724398.jpg" alt="Education Logo" class="custom-logo">
+        </div>
+        <div class="custom-heading-wrapper">
+            <h1 class="custom-main-title">Welcome to Our Alpha and Omega Learning Platform</h1>
+        </div>
+    </header>
+
+</body>
+</html>

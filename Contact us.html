@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #FF6F61;
+        }
+        .office-info, .contact-form {
+            margin-bottom: 20px;
+        }
+        .contact-form label {
+            font-weight: bold;
+        }
+        .btn-submit {
+            background-color: #FF6F61;
+            color: white;
+        }
+        .btn-submit:hover {
+            background-color: #e55a50;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: orchid;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: darkviolet;
+        }
+
+        .office-info{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+
+        H5{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="assignment.html" class="back-button">Return to Back Page</a>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <div class="office-info">
+            <h2>Our Office</h2>
+            <h5>WELCOME TO OUR ALPHA LEARNING PLATFORM</h5> 
+                      <p> 
+                        3rd floor, Korem Mall,<br> 
+                        Near Toyota Showroom,<br> 
+                        Road No 22, Wagle Estate,<br> 
+                        Thane-West 
+                      </p> 
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> info@institution.edu</p>
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p>Saturday: 10:00 AM - 2:00 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

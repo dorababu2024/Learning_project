@@ -1,0 +1,356 @@
+
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color:yellow;
+  padding: 9px 0;
+  box-shadow: 10px 10px 10px salmon red;
+}
+
+.marquee-text {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
+  font-size: 1.5rem; /* Font size set for larger screens */
+  font-weight: bolder;
+  color:red;
+  text-shadow: 10px 10px 10px salmon red;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 200px;
+  color: red; /* Inner text color */
+    -webkit-text-stroke: 0.9px black; /* Outline: 2px weight and black color */
+    font-weight: bold; /* Optional, for bolder text */
+
+}
+
+@keyframes marquee {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .marquee-text {
+      font-size: 1.2rem; /* Adjust font size for tablets */
+      animation: marquee 12s linear infinite; /* Slow down the animation for better readability */
+  }
+}
+
+@media (max-width: 10px) {
+  .marquee-text {
+      font-size: 1rem; /* Further adjust font size for mobile phones */
+      animation: marquee 14s linear infinite; /* Slow it down more for mobile readability */
+  }
+}
+
+
+.logo1{
+  width:50px;
+  height:50px;
+}
+
+.logocontainer{
+  display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff7f00;
+            font-size: 25px;
+            color: #f9f9f9;
+            text-shadow: 5px 5px 5px salmon;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: bolder;
+            padding: 10px;
+            
+}
+
+
+.imgcon{
+  width:50px;
+  height:50px;
+  margin-right: 56%;
+  border-radius: 75%;
+  border: 11px solid white; /* Adds a white border around the logo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.heading123{
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.custom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff8000; /* Orange background color */
+  padding: 15px 30px;
+  color: white;
+  height: 80px;
+}
+
+.custom-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.custom-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.custom-heading-wrapper {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.custom-main-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .custom-header {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 10px;
+  }
+
+  .custom-logo {
+      width: 60px;
+      height: 60px;
+  }
+
+  .custom-main-title {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-main-title {
+      font-size: 1.2rem;
+  }
+
+  .custom-logo {
+      width: 50px;
+      height: 50px;
+  }
+}
+
+/* Nav container styling */
+.nav-container {
+  display: flex;
+  justify-content:first baseline;
+  align-items: center;
+  background-color: #333;
+  padding: 8px;
+  flex-wrap: wrap; /* Enables wrapping for smaller screens */
+}
+
+/* Links inside the nav bar */
+.nav-container a {
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.nav-container a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Dropdown container */
+.nav-dropdown {
+  position:relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.dropdown-button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: goldenrod;
+}
+
+/* Show the dropdown content on hover */
+.nav-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-container a, 
+  .dropdown-button {
+      font-size: 1rem;
+      padding: 10px;
+  }
+
+  /* Make dropdown content relative for better positioning on mobile */
+  .dropdown-content {
+      position: relative;
+      min-width: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card-title {
+      font-size: 1.3rem;
+  }
+
+  .card-text {
+      font-size: 0.9rem;
+  }
+
+  .btn {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 10px) {
+  .card-title {
+      font-size: 1.2rem;
+  }
+
+  .card-text {
+      font-size: 0.8rem;
+  }
+
+  .btn {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
